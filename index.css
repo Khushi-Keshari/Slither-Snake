@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:pink;
+    display: flex;
+    align-items: center;/* Y-Axis */
+    justify-content: center; /* X-Axis */ 
+
+}
+.container{
+    height: 40rem;
+    width: 36rem;
+    background-color: yellow;
+    box-shadow: 0 0 10px 1px grey;
+}
+.score_container{
+    height: 4rem;
+    width: 36rem;
+    background-color: grey;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+.game_container{
+    height: 36rem;
+    width: 36rem;
+    display: grid;
+    grid-template: repeat(25,1fr) / repeat(25,1fr);
+}
+.food{
+    background-color: blue;
+    border-radius: 50%;
+}
+.snake{
+    background-color: red;
+}
